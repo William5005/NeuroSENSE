@@ -1,84 +1,197 @@
 # NeuroSENSE
-NeuroSENSE is a deep learning-driven, non-invasive microwave imaging system designed to detect and classify neurological disorders such as hemorrhage, ischemic stroke, and brain tumors. By analyzing NanoVNA S21 signal data with a 1D CNN model. it provides a portable and cost-effective solution for early neurological diagnosis.
+
+*A Unified Deep Learning-Driven Microwave System for Detection of Neurological Disorders*
+
+---
 
 ## Overview
 
-NeuroSENSE is a non-invasive AI-powered microwave system developed for detecting and classifying neurological disorders using NanoVNA S21 signal measurements and deep learning.
+NeuroSENSE is a non-invasive, low-cost microwave imaging system that leverages deep learning to detect and classify neurological disorders from NanoVNA S21 signal measurements. The system is designed to provide portable and efficient diagnosis for conditions such as brain hemorrhage, ischemic stroke, and tumors.
 
 ---
 
 ## Features
 
-- Non-invasive diagnosis
-- Microwave signal analysis
-- NanoVNA-based data acquisition
-- 1D CNN architecture
-- Streamlit real-time interface
+* Non-invasive neurological disorder detection
+* NanoVNA-based microwave signal acquisition
+* Deep learning-driven classification
+* 1D CNN architecture
+* Real-time inference support
+* Streamlit-based user interface
+* Automated evaluation and reporting
 
 ---
 
 ## Disorders Detected
 
-- Hemorrhage
-- Ischemic Stroke
-- Brain Tumor
-- Normal Brain
+* Normal Brain
+* Hemorrhage
+* Ischemia
+* Brain Tumor
+
+---
+
+## System Workflow
+
+```text
+NanoVNA
+    ↓
+S21 Signal Acquisition
+    ↓
+Preprocessing
+    ↓
+Feature Extraction
+    ↓
+1D Convolutional Neural Network
+    ↓
+Classification
+```
+
+---
+
+## Repository Structure
+
+```text
+NeuroSENSE/
+│
+├── datasets/
+│   ├── nanovna_domain/
+│   └── new/
+│
+├── images/
+├── live_sweeps/
+├── model/
+├── output/
+├── results/
+├── src/
+│
+├── calibration.cal
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
 ---
 
 ## Technologies Used
 
-- Python
-- PyTorch
-- Streamlit
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
+* Python
+* PyTorch
+* Streamlit
+* NumPy
+* Pandas
+* Scikit-learn
+* Matplotlib
+* ReportLab
 
 ---
 
-## Workflow
+## Dataset Information
 
-NanoVNA
-↓
-S21 Signal Acquisition
-↓
-Preprocessing
-↓
-1D CNN
-↓
-Classification
+* Frequency Range: **1–2 GHz**
+* Sweep Points: **101**
+* Signal Parameter: **S21 Log Magnitude**
+* Classes:
 
----
-
-## Dataset
-
-Frequency Range:
-
-1–2 GHz
-
-Points per Sweep:
-
-101
-
-Classes:
-
-- Normal
-- Hemorrhage
-- Tumor
-- Ischemia
+  * Normal
+  * Hemorrhage
+  * Ischemia
+  * Tumor
 
 ---
 
-## Performance
+## Model Architecture
 
-Accuracy: ~80%
+The classification model employs a one-dimensional convolutional neural network (1D CNN) optimized for microwave signal analysis. The network learns discriminative features from S21 signatures and predicts the corresponding neurological condition.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/NeuroSENSE.git
+cd NeuroSENSE
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate the environment:
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Running the Application
+
+```bash
+streamlit run src/app.py
+```
+
+---
+
+## Project Components
+
+### Training
+
+```bash
+python src/train_3.py
+```
+
+### Evaluation
+
+```bash
+python src/evaluate_3.py
+```
+
+### Dataset Normalization
+
+```bash
+python src/normalize_dataset.py
+```
+
+---
+
+## Results
+
+NeuroSENSE demonstrates strong classification performance on NanoVNA-domain datasets and provides a scalable framework for microwave-based neurological disorder detection.
+
+---
+
+## Future Improvements
+
+* Multi-disorder classification enhancement
+* Robustness testing
+* Explainable AI integration
+* Real-time embedded deployment
+* Expanded clinical datasets
 
 ---
 
 ## Author
 
-William
+**William**
 
 B.Tech Computer Science and Engineering
+
+---
+
+## License
+
+This project is licensed under the MIT License.s
