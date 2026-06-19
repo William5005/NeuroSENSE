@@ -146,28 +146,6 @@ streamlit run src/app.py
 
 ---
 
-## Project Components
-
-### Training
-
-```bash
-python src/train_3.py
-```
-
-### Evaluation
-
-```bash
-python src/evaluate_3.py
-```
-
-### Dataset Normalization
-
-```bash
-python src/normalize_dataset.py
-```
-
----
-
 ## Results
 
 NeuroSENSE demonstrates strong classification performance on NanoVNA-domain datasets and provides a scalable framework for microwave-based neurological disorder detection.
