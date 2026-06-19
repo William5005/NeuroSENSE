@@ -1,4 +1,4 @@
-# Calibration data for NanoVNA-Saver
+# Calibration data for NanoVNA-Saver. In NanoVNA Saver load this calibration file. 
 
 # Hz ShortR ShortI OpenR OpenI LoadR LoadI ThroughR ThroughI ThrureflR ThrureflI IsolationR IsolationI
 1000000000 -0.977637504 0.035516544 0.821515904 -0.070373624 -0.04520392 -0.002095112 0.856492608 -0.050804556 0.074781904 0.113067208 0.000524285 0.001117728
