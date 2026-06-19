@@ -172,4 +172,4 @@ B.Tech Computer Science and Engineering
 
 ## License
 
-This project is licensed under the MIT License.s
+This project is licensed under the MIT License.
